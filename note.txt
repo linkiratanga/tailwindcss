@@ -1,0 +1,8 @@
+Dowload tailwind -->
+npm install -D tailwindcss
+
+Create tailwind.config.js -->
+npx tailwindcss init
+
+Create output and run tailwind -->
+npx tailwindcss -i ./project/input.css -o ./project/output.css --watch
