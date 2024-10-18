@@ -8,50 +8,63 @@
   </head>
   <body>
     <!-- Main container -->
-    <div class="w-full p-4 mx-auto space-y-4">
+    <div class="w-full p-4 space-y-4 relative">
       <!-- Top bar  -->
-      <div class="flex w-full h-16 gap-4 p-2 bg-blue-800">
-        <div class="w-1/12 rounded bg-white/50"></div>
-        <div class="w-7/12 rounded bg-white/50"></div>
+      <div
+        class="flex w-full h-14 gap-4 py-2 px-4 bg-slate-800/30 backdrop-blur rounded fixed right-0"
+      >
+        <div
+          class="w-1/12 rounded-full bg-white/50 border-t-orange-600 border-4 flex overflow-hidden"
+        >
+          <img
+            src="/assets/Link_profil.jpg"
+            class="w-full object-cover object-center"
+          />
+        </div>
+        <div class="w-10/12 md:w-7/12 rounded bg-white/50 overflow-hidden">
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-full h-full text-center placeholder-white text-white outline-none bg-white/0"
+          />
+        </div>
         <div class="w-2/12 rounded bg-white/50"></div>
         <div class="w-2/12 rounded bg-white/50"></div>
       </div>
       <!-- Main tab -->
       <div class="grid w-full h-screen grid-cols-12 gap-4">
         <!-- feed -->
-        <div class="grid h-screen grid-cols-3 col-span-8 gap-4 p-4 overflow-auto bg-blue-800 rounded ">
-            <div class="bg-white rounded h-80"></div>
-            <div class="bg-white rounded h-80"></div>
-            <div class="bg-white rounded h-80"></div>
-            <div class="bg-white rounded h-80"></div>
-            <div class="bg-white rounded h-80"></div>
-            <div class="bg-white rounded h-80"></div>
-            <div class="bg-white rounded h-80"></div>
-            <div class="bg-white rounded h-80"></div>
-            <div class="bg-white rounded h-80"></div>
-
+        <div
+          class="grid h-screen grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-span-12 lg:col-span-8 gap-4 p-4 overflow-auto bg-blue-800 rounded"
+        >
+          <div class="bg-white rounded h-80"></div>
+          <div class="bg-white rounded h-80"></div>
+          <div class="bg-white rounded h-80"></div>
+          <div class="bg-white rounded h-80"></div>
+          <div class="bg-white rounded h-80"></div>
+          <div class="bg-white rounded h-80"></div>
+          <div class="bg-white rounded h-80"></div>
+          <div class="bg-white rounded h-80"></div>
+          <div class="bg-white rounded h-80"></div>
         </div>
         <!-- Suggestion -->
-        <div class="col-span-4 bg-blue-800 rounded p-4 h-screen flex flex-row overflow-x-scroll space-x-4 ">
-          
-            <div class="bg-red-600 h-screen w-96 shrink-0"></div>
-            <div class="bg-white h-screen w-96 shrink-0"></div>
-          
-         
-
+        <div
+          class="col-span-12 lg:col-span-4 bg-blue-800 rounded p-4 h-40 lg:h-screen flex flex-row overflow-x-scroll space-x-4"
+        >
+          <div class="bg-white h-24 lg:h-screen w-full shrink-0"></div>
+          <div class="bg-white h-24 lg:h-screen w-96 shrink-0"></div>
         </div>
-      </div>  
-     <!-- Bottom bar -->
-     <div class="bg-blue-800 grid grid-cols-3 w-full h-fit p-4 gap-4">
-        <div class="bg-white h-16 rounded"></div> 
-        <div class="bg-white h-16 rounded"></div> 
-        <div class="bg-white h-16 rounded"></div> 
-     </div>
 
-     <!-- Last tags -->
-      
+        <!-- Bottom bar -->
+
+        <div
+          class="bg-blue-800 col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full h-fit p-4 gap-4 rounded"
+        >
+          <div class="bg-white h-16 rounded"></div>
+          <div class="bg-white h-16 rounded"></div>
+          <div class="bg-white h-16 md:col-span-2 lg:col-span-1 rounded"></div>
+        </div>
       </div>
-
     </div>
   </body>
 </html>
